@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+header, body, nav, ul, li, a{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#SF{
+  text-align: center;
+  color: black;
+}
+
+a, h3{
+  color: white;
+  text-decoration: none;
+  padding-inline: 5px;
+  margin: 10px;
+  font-family: monospace;
+}
+
+header{
+  display: flex; /* transforma o container header em um display flex, importante para tornar o container responsivo, e facil de deixar da forma que quiser.*/
+  background-color: grey; /* pinta o fundo com a cor no caso grey*/
+  justify-content: space-between; /* serve para que os elementos ocupem todo o width do container em espaços iguais entre eles*/
+  flex-wrap: wrap; /* quebrar a linha, importante para ser responsivo*/
+  padding: 8px; /* Uma das partes do box model, importante por ser a area de toque ou clique.*/
+  background-color: black;
+  box-shadow: 10px 10px 20px grey; /*Para dar detalhe de sombreamento no elemento*/
+  width: 100vw;
+  margin-bottom: 40px;
+}
+
+a:hover {
+  padding: 10px; 
+  border-radius: 20px;
+  background-color: grey;
+  color: black;
+}
+
+ul{
+  display: flex; /* definiu o display do ul para um display flex/flexivel*/
+}
+
+img{
+  width: 100%; 
+  width: 1920px 1080px;
+}
+
+section{
+  max-width: 90%;
+  max-width: 2000px;
+  max-height: 1080px;
+  display: flex;   
+  flex-wrap: wrap;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+article{
+  flex: 1 1 300px; 
+  margin: 10 auto;
+  margin: 10px;
+  text-align: justify;
+  box-shadow: 5px 5px 14px #B8B8B8;
+  cursor: pointer;
+  max-width: 900px;
+}
+
+article p{
+  text-align: center;
+  font-size: 14px;
+}
+
+article:hover{
+  box-shadow: 1px 1px #A0A0A0;
+  border: 2px black;
+}
+
+@media screen and (max-width: 1319px) {
+  section{
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  #SF{
+    font-size: 25px;
+  }
+
+  section p{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  
+  section{
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  ul{
+    display: contents;
+  }
+
+  #SF{
+    font-size: 35px;
+  }
+
+  section p{
+    font-size: 25px;
+  }
+
+  li{
+    background-color: grey;
+    border-radius: 10px;
+    margin: 10px;
+  }
+
+  li a{
+    padding: 10px;
+  }
+
+  #Logo{
+    align-self: center;
+    font-size: 50px;
+  }
+  
+  li a{
+    text-justify: center;
+  }
+
+  a:hover {
+    padding: 0px; 
+    border-radius: 0;
+    background-color: grey;
+    color: black;
+  }
+}
