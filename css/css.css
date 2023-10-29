@@ -1,22 +1,22 @@
-@charset "utf-8";
+@charset "utf-8"; /*  */
 
 header, body, nav, ul, li, a{
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  margin: 0; /* usei para retirar a margin */
+  padding: 0; /* usei para retirar o padding */
+  list-style: none; /* usei para tirar styles que vem padrão como a * em uma <li> */
 }
 
 #SF{
-  text-align: center;
-  color: black;
+  text-align: center; /* Centralizar o texto */
+  color: black; /* Aqui eu define esse texto para a cor preta */
 }
 
 a, h3{
-  color: white;
-  text-decoration: none;
-  padding-inline: 5px;
-  margin: 10px;
-  font-family: monospace;
+  color: white; /* Define a cor de a e h3 para branco */
+  text-decoration: none; /* usei para tirar efeitos padrôes que ja vem */
+  padding-inline: 5px; /* Adicionei 5 pixels somente na horizontal */
+  margin: 10px; /* adicionei uma margin de 10 pixels */
+  font-family: monospace; /* Define um outro tipo de fonte */
 }
 
 header{
@@ -25,14 +25,14 @@ header{
   justify-content: space-between; /* serve para que os elementos ocupem todo o width do container em espaços iguais entre eles*/
   flex-wrap: wrap; /* quebrar a linha, importante para ser responsivo*/
   padding: 8px; /* Uma das partes do box model, importante por ser a area de toque ou clique.*/
-  background-color: black;
+  background-color: black; /* Define a cor do fundo de preto */
   box-shadow: 10px 10px 20px grey; /*Para dar detalhe de sombreamento no elemento*/
-  width: 100vw;
-  margin-bottom: 40px;
+  width: 100vw; /* Define 100% do viewport width ou seja ocupar toda a largura da tela */
+  margin-bottom: 40px; /* Aqui eu adicionei 40 pixels a margin localizada na parte de baixo */
 }
 
 a:hover {
-  padding: 10px; 
+  padding: 10px; /* Como é um hover quando o mouse passa por cima ou você aperto na tela do celular o padding aumenta para 10 pixel junto com um detalhe adicionado pelo comando abaixo */
   border-radius: 20px;
   background-color: grey;
   color: black;
@@ -43,17 +43,17 @@ ul{
 }
 
 img{
-  width: 100%; 
-  width: 1920px 1080px;
+  width: 100%;  /* ocupar 100% de largura da tela, viewport width */
+  width: 1920px 1080px; /* basicamente define a resolução de 1920 pixels por 1080 pixels */
 }
 
 section{
-  max-width: 90%;
+  max-width: 90%; /* Qualquer comando que possua um max anteriormente define a regra a seguir em relação ao container em que o section no caso está */
   max-width: 2000px;
   max-height: 1080px;
-  display: flex;   
-  flex-wrap: wrap;
-  margin-left: 5%;
+  display: flex;   /* Definiu display flexivel */
+  flex-wrap: wrap; /* Permite os elementos que não couberam em uma linha quebrarem e irem para a proxima, graças ao display flex. */
+  margin-left: 5%; /* Definiu a margin da diretia e esqueda uma margin de 5% do viewport width. */
   margin-right: 5%;
 }
 
@@ -133,8 +133,8 @@ article:hover{
   }
 
   a:hover {
-    padding: 0px; 
-    border-radius: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
     background-color: grey;
     color: black;
   }
