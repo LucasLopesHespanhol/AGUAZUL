@@ -542,9 +542,7 @@ form {
     .mcontato {
         margin-top: 0;
         padding-top: 50px;
-        margin-bottom: 400px;
-        height: 100vh;
-        
+        margin-bottom: 200px;
     }
 
     .mainproduto {
@@ -553,5 +551,14 @@ form {
         justify-content: center;
         height: auto;
         padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .mcontato {
+        margin-top: 0;
+        padding-top: 50px;
+        margin-bottom: 500px;
+        height: auto;
     }
 }
