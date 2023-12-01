@@ -186,7 +186,7 @@ width: 100%;
 .mainproduto {
     background-image: url(fundoproduto.png);
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 110vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -559,6 +559,11 @@ form {
         margin-top: 0;
         padding-top: 50px;
         margin-bottom: 500px;
+        height: 1100px;
+        width: auto;
+    }
+
+    .sobre {
         height: auto;
     }
 }
